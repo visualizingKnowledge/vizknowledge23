@@ -1,0 +1,189 @@
+@media (max-width: 700px) {
+
+  /* SECTIONS */
+
+  .intro {
+    max-height: 650px;
+    height: fit-content;
+  }
+
+
+
+  .header {
+    height: fit-content;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 2% 5px 2%;
+  }
+
+  .headerUp {
+    height: fit-content;
+    background-color: unset;
+    position: relative;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  .topicWord {
+    font-size: 1.3rem;
+    z-index: 20;
+    padding: 0;
+  }
+
+  #top-image {
+    background-size: 250%;
+    height: 486px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding-top: 3rem;
+    min-height: fit-content;
+  }
+
+  .textBig {
+    margin-top: 0;
+    width: 100% !important;
+    font-size: 2rem;
+  }
+
+  .details {
+    margin-top: 2rem;
+  }
+
+
+  .subtopics {
+    flex-direction: column;
+    padding-bottom: 0rem;
+    padding-top: 3rem;
+  }
+
+  .subtopicsItem {
+    width: 100%;
+  }
+
+  .subtipicsItemTitle {
+    height: 16rem;
+  }
+
+  .background {
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+
+  .backgroundText {
+    width: 100%;
+    border: 0;
+  }
+
+  .background h2 {
+    width: 100%;
+    border: 0;
+  }
+
+  .sponsors {
+    flex-direction: column;
+  }
+
+  .sponsor-logos img {
+    height: 10vw;
+  }
+
+  .joinus {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .joinText {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .joinText div {
+    margin-bottom: 2rem;
+  }
+
+  footer{
+    margin-top: -3px;
+  }
+
+  .footerInfo {
+    flex-direction: column;
+  }
+
+  .footerInfo div {
+    margin-bottom: 2rem;
+  }
+
+
+  /* SOCIAL MEDIA */
+
+  .socialm{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+  /* DOT */
+ 
+  #mouse-circle {
+    display: none;
+  }
+
+
+
+
+  /* NAVIGATION */
+  .menu-icon {
+    height: 2px;
+  }
+
+  .navMenu li a {
+    border: 0;
+  }
+
+
+
+  .navMenu li a:hover {
+    background-color: var(--white);
+    color: var(--black);
+    color: var(--pink);
+    border: 0;
+  }
+
+  .navMenu {
+    position: relative;
+    top:0;
+    left:0;
+    padding:0;
+  }
+
+  
+
+  .navMenu li a {
+    padding: 0.2rem 0;
+    margin: 0;
+  }
+
+
+  .navMenu ul {
+    margin-bottom: 6rem;
+    margin-left: 1rem;
+    padding: 0;
+    overflow: hidden;
+  }
+
+
+  .navMenu li .inactive:hover {
+    cursor: default;
+    color: var(--black);
+    opacity: 0.4;
+  }
+
+
+}
