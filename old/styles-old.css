@@ -10,7 +10,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
   font-family: 'Inter';
   font-weight: 400;
   color: var(--black);
+  margin: 1rem 1rem 0 1rem; 
 }
 
 section {
@@ -85,6 +86,7 @@ a:hover {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 0;
 }
 
@@ -97,27 +99,36 @@ a:hover {
   box-sizing: border-box;
 }
 
-.headerUp{
-background-color: var(--white);
-position: fixed;
-width: 100%;
-padding: 10px 2% 10px 2%;
-}
+
 
 
 .navMenu a:hover  {
   border: 1px solid var(--black);
  }
 
+.caption{
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
 
+.headerInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 #top-image {
   background-color: var(--red);
-  height: 75vh;
+  height: 65vh;
   background-image: url("images/bg.jpg");
   background-size: cover;
-  width: 100%;
   background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-bottom: 2rem;
 }
 
 .headerBottom {
@@ -128,12 +139,11 @@ padding: 10px 2% 10px 2%;
 }
 
 .topicWord {
-  font-size: 2.4rem;
+  font-size: 5.5rem;
   text-transform: uppercase;
-  font-family: 'Inter';
-  font-weight: 400;
-  letter-spacing: 1px;
-  padding: 10px 2% 0 2%; 
+  font-family: "acumin-pro-condensed", sans-serif;
+font-weight: 500;
+font-style: normal;
 }
 
 
@@ -501,22 +511,17 @@ footer h3 {
 }
 
 .logo {
-  padding: .2rem .6rem;
-  margin: 0 0.1rem;
-  font-size: 1.3rem;
-  border-radius: 100px;
-  background-color: var(--black);
-  height: fit-content;
-  width: fit-content;
-  position: relative;
-  border: var(--border) solid var(--black);
-  font-family: 'Inter';
-  font-weight: 400;
-  font-style: normal;
-  color: var(--white);
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  font-family: "acumin-pro-condensed", sans-serif;
+font-weight: 500;
+font-style: normal;
+  color: var(--black);
   letter-spacing: 0px;
   z-index: 20;
 }
+
+
 
 .navMenu {
   display: flex;
@@ -642,4 +647,10 @@ footer h3 {
   .navMenu .menu-icon {
     display: none;
   }
+}
+
+
+a.logo  {
+  border-bottom: 0px solid var(--white)!important;
+  text-decoration: none;
 }

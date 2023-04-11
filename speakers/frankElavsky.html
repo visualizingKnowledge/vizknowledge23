@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/matter-js@0.18.0/build/matter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pathseg@1.2.1/pathseg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/fav/site.webmanifest">
+
+    <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="https://use.typekit.net/ezd4tlg.css">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>VK23 | Visualizing Uncertainty</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles-mob.css">
+
+
+    <meta property="og:title" content="VK23 | Visualising Uncertainty">
+    <meta property="og:type" content="article" />
+    <meta property="og:description"
+        content="A conference, a showcase and workshops, invites you to discuss and explore uncertainty in a new light.">
+    <meta property="og:image" content="https://vizknowledge.aalto.fi/images/thumbnail.jpg">
+    <meta property="og:url" content="https://vizknowledge.aalto.fi/">
+    <meta name="twitter:card" content="summary_large_image">
+
+</head>
+
+<body>
+    <section>
+        <div class="header">
+        <nav>
+            <a href="/index.html" class="logo shuffle">VK23</a>
+            <input type="checkbox" id="nav" class="hidden" />
+            <label for="nav" class="nav-open">
+                <div class="menuWord">MENU</div>
+                <div class="icon"><i></i><i></i><i></i></div>
+            </label>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1SyVBLu7guRurc8OyRkv90txKp1Db3_XP/view?usp=share_link"
+                            target="_blank">SPEAKERS</a></li>
+                    <li><a href="#">WORKSHOPS</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Q1pAYY0RwmO1M-t4t25mXDZN9vRIci3C/view?usp=share_link"
+                            target="_blank">SHOWCASE CALL</a></li>
+                    <li><a href="https://forms.gle/GjFoEn2985SrKK5j6" target="_blank">VOLUNTEER CALL</a></li>
+                    <li><a href="https://link.webropol.com/ep/vk23" target="_blank">TICKETS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </section>
+
+    <section>
+        <div class="sHero">
+            <div class="sTitle">
+                <div class="buttonWhite"><a href="/index.html">← back</a></div>
+                <div>
+                    <div class="speakersName">
+                        <h1>Frank</h1>
+                        <h1>ELAVSKY</h1>
+                    </div>
+                    <div class="speakersTopic">
+                        <div class="caption shuffle">#Open</div>
+                        <div class="caption shuffle">Science</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sPhoto">
+                <img src="/images/speakers/Frank.png">
+            </div>
+        </div>
+        <div class="sContent">
+            <div class="sInfo">
+                <p>I'm Frank Elavsky (he/him). I research, design, engineer, contribute to standards, and talk about things at the intersection of data work and accessibility. I’m a PhD student and researcher at the Human-Computer Interaction Institute at Carnegie Mellon University and a mix of contractor/intern doing data interaction research at Apple. Before embarking on a PhD I was a staff design systems engineer at Visa on their Data Experience team and lead contributor to the accessibility efforts of their first open source library, Visa Chart Components. I care about the tools that designers, developers, and researchers use to make accessible data visualizations and who gets included in this work as well.</p>
+            </div>
+            <div class="sLinks">
+                <div><a class="link" target="_blank" href="https://frank.computer">website</a></div>
+                <div><a class="link" target="_blank" href="https://twitter.com/frankelavsky">Twitter</a></div>
+                <div><a class="link" target="_blank" href="https://vis.social/@frankelavsky">Mastodon</a></div>
+            </div>
+
+
+
+        </div>
+        <div class="speakerNavigation">
+            <div class="buttonWhite"><a href="/speakers/moritzStefaner.html">← Previous speaker</a></div>
+            <div class="buttonWhite"><a href="/speakers/nadjaKelm.html">Next speaker →</a></div>
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="black">
+        <div class="footerTitle">
+            <h1 class="shuffle">Contact Us</h1>
+            <h1 class="shuffle">VIZKNOWLEDGE@AALTO.FI</h1>
+        </div>
+        <div class="footerInfo">
+            <div class="caption"><span class="shuffle">Visual Communication Design</span> <span
+                    class="shuffle">School of Arts, Design and Architecture</span></div>
+            <div class="caption" style="text-align: right;"><span class="shuffle">Department of Art and Media</span>
+                <span class="shuffle">Aalto University</span></div>
+        </div>
+        <div id="matterContainer"></div>
+    </footer>
+
+    <script src="/shuffle.js"></script>
+    <script src="/work-in-progress.js"></script>
+
+
+
+
+</body>
+
+</html>
