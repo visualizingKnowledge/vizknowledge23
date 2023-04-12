@@ -105,7 +105,7 @@ var about = Bodies.rectangle(canvasWidth*3/5, 50, 140, 40, {
             texture: 'https://visualizingknowledge.github.io/vk23/images/about.svg',
         }
     },
-    url: ''
+    url: 'https://visualizingknowledge.github.io/vk23/'
 })
 
 var tickets = Bodies.rectangle(canvasWidth/2, 50, 152, 40, {
@@ -133,7 +133,7 @@ var showcase = Bodies.rectangle(canvasWidth/2, 50, 196, 40, {
         }
         // fillStyle: "#ff0000"
     },
-    url: ''
+    url: 'https://drive.google.com/file/d/1Q1pAYY0RwmO1M-t4t25mXDZN9vRIci3C/view'
 })
 
 var workshops = Bodies.rectangle(canvasWidth/3, 50, 216, 40, {
@@ -147,7 +147,7 @@ var workshops = Bodies.rectangle(canvasWidth/3, 50, 216, 40, {
         }
         // fillStyle: "#ff0000"
     },
-    url: ''
+    url: 'https://visualizingknowledge.github.io/vk23/'
 })
 
 var speakers = Bodies.rectangle(canvasWidth/4, 50, 180, 40, {
@@ -161,7 +161,7 @@ var speakers = Bodies.rectangle(canvasWidth/4, 50, 180, 40, {
         }
         // fillStyle: "#ff0000"
     },
-    url: ''
+    url: 'https://visualizingknowledge.github.io/vk23/#speakers'
 })
 
 var program = Bodies.rectangle(canvasWidth/2, 50, 176, 40, {
@@ -175,7 +175,7 @@ var program = Bodies.rectangle(canvasWidth/2, 50, 176, 40, {
         }
         // fillStyle: "#ff0000"
     },
-    url: ''
+    url: 'https://visualizingknowledge.github.io/vk23/'
 })
 
 var instagram = Bodies.circle(canvasWidth/3, 50, 21, {
