@@ -21,7 +21,7 @@ body, html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Acumin Pro';
+  font-family: 'acumin-pro';
   font-style: normal;
   font-weight: 400;
   color: var(--black);
@@ -66,7 +66,7 @@ h2 {
 
 p {
   font-size: 1.25rem;
-  font-family: 'Acumin Pro';
+  font-family: 'acumin-pro';
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -145,7 +145,7 @@ a:hover{
 }
 
 .caption {
-  font-family: 'Acumin Pro';
+  font-family: 'acumin-pro';
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -546,7 +546,7 @@ nav ul li a:hover {
 .buttonWhite a {
   display: inline-block;
   color: var(--black);
-  font-family: 'Acumin Pro';
+  font-family: 'acumin-pro';
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
