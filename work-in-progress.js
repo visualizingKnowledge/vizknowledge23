@@ -157,7 +157,7 @@ var speakers = Bodies.rectangle(canvasWidth/4, 50, 180, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/speakers.svg',
+            texture: 'https://visualizingknowledge.github.io/vk23/https://vizknowledge.aalto.fi/images/speakers.svg',
         }
         // fillStyle: "#ff0000"
     },
