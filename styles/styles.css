@@ -86,10 +86,12 @@ h3 {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  line-height: 100%;
-  padding-bottom: 0.2rem;
+  line-height: 90%;
 }
 
+.speakersName h3{
+    padding-top: 0.2rem;
+}
 
 a{
   text-decoration: none;
