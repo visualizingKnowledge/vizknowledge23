@@ -102,10 +102,10 @@ var about = Bodies.rectangle(canvasWidth*3/5, 50, 140, 40, {
     render: {
         // fillStyle: "#ff0000"
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/about.svg',
+            texture: '../images/about.svg',
         }
     },
-    url: 'https://visualizingknowledge.github.io/vk23/'
+    url: '../index.html'
 })
 
 var tickets = Bodies.rectangle(canvasWidth/2, 50, 152, 40, {
@@ -115,7 +115,7 @@ var tickets = Bodies.rectangle(canvasWidth/2, 50, 152, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/tickets.svg',
+            texture: '../images/tickets.svg',
         }
         // fillStyle: "#ff0000"
     },
@@ -129,7 +129,7 @@ var showcase = Bodies.rectangle(canvasWidth/2, 50, 196, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/showcase.svg',
+            texture: '../images/showcase.svg',
         }
         // fillStyle: "#ff0000"
     },
@@ -143,11 +143,11 @@ var workshops = Bodies.rectangle(canvasWidth/3, 50, 216, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/workshops.svg',
+            texture: '../images/workshops.svg',
         }
         // fillStyle: "#ff0000"
     },
-    url: 'https://visualizingknowledge.github.io/vk23/'
+    url: '../index.html'
 })
 
 var speakers = Bodies.rectangle(canvasWidth/4, 50, 180, 40, {
@@ -157,11 +157,11 @@ var speakers = Bodies.rectangle(canvasWidth/4, 50, 180, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/speakers.svg',
+            texture: '../images/speakers.svg',
         }
         // fillStyle: "#ff0000"
     },
-    url: 'https://visualizingknowledge.github.io/vk23/#speakers'
+    url: '../#speakers'
 })
 
 var program = Bodies.rectangle(canvasWidth/2, 50, 176, 40, {
@@ -171,11 +171,11 @@ var program = Bodies.rectangle(canvasWidth/2, 50, 176, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/program.svg',
+            texture: '../images/program.svg',
         }
         // fillStyle: "#ff0000"
     },
-    url: 'https://visualizingknowledge.github.io/vk23/'
+    url: '../index.html'
 })
 
 var instagram = Bodies.circle(canvasWidth/3, 50, 21, {
@@ -184,7 +184,7 @@ var instagram = Bodies.circle(canvasWidth/3, 50, 21, {
     restitution: RESTITUTION,
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/inst.svg',
+            texture: '../images/inst.svg',
         }
     },
     url: 'https://www.instagram.com/vizknowledge/'
@@ -195,7 +195,7 @@ var facebook = Bodies.circle(canvasWidth/4, 50, 21, {
     restitution: RESTITUTION,
     render: {
         sprite: {
-            texture: '/images/fcbk.svg',
+            texture: '../images/fcbk.svg',
         }
     },
     url: 'https://www.facebook.com/vizknowledge/'
@@ -208,7 +208,7 @@ var twitter = Bodies.circle(canvasWidth/2, 50, 21, {
     
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/twi.svg',
+            texture: '../images/twi.svg',
         }
     },
     url: 'https://twitter.com/vizknowledge/'
@@ -221,7 +221,7 @@ var vimeo = Bodies.circle(canvasWidth/3, 50, 21, {
     
     render: {
         sprite: {
-            texture: 'https://visualizingknowledge.github.io/vk23/images/vim.svg',
+            texture: '../images/vim.svg',
         }
     },
     url: 'https://vimeo.com/vizknowledge/'

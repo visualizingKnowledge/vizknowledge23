@@ -169,7 +169,7 @@ a:hover{
 #headerImage {
   background-color: var(--red);
   height: 63vh;
-  background-image: url("https://visualizingknowledge.github.io/vk23/images/bg.jpg");
+  background-image: url("images/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
