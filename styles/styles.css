@@ -290,7 +290,7 @@ justify-content: space-between;
 }
 
 .speakersName{
-  border-top: 1px solid var(--black);
+    border: none!important;
     margin-top: 0.5rem;
     padding-top: 0.2rem;
 }

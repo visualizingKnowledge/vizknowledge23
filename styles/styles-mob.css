@@ -107,8 +107,12 @@
     margin-bottom: 0.5rem;
   }
 
+  .speakersName{
+    border-top: 1px solid var(--black);
+  }
+
   .speakersName h3 {
-    font-size: 4rem !important;
+        font-size: 4rem !important;
     line-height: 100%;
   }
 
