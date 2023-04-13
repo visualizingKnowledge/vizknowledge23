@@ -16,6 +16,13 @@ h1{
     line-height: 140%;
   }
 
+  .logo{
+    font-size: 10rem;
+  }
+
+  .headerInfo{
+    margin-top: 3rem;
+  }
 
   .header {
     height: fit-content;
