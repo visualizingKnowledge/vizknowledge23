@@ -102,7 +102,7 @@ var about = Bodies.rectangle(canvasWidth*3/5, 50, 140, 40, {
     render: {
         // fillStyle: "#ff0000"
         sprite: {
-            texture: '../images/about.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/about.svg',
         }
     },
     url: '../index.html'
@@ -115,7 +115,7 @@ var tickets = Bodies.rectangle(canvasWidth/2, 50, 152, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: '../images/tickets.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/tickets.svg',
         }
         // fillStyle: "#ff0000"
     },
@@ -129,7 +129,7 @@ var showcase = Bodies.rectangle(canvasWidth/2, 50, 196, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: '../images/showcase.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/showcase.svg',
         }
         // fillStyle: "#ff0000"
     },
@@ -143,7 +143,7 @@ var workshops = Bodies.rectangle(canvasWidth/3, 50, 216, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: '../images/workshops.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/workshops.svg',
         }
         // fillStyle: "#ff0000"
     },
@@ -157,7 +157,7 @@ var speakers = Bodies.rectangle(canvasWidth/4, 50, 180, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: '../images/speakers.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/speakers.svg',
         }
         // fillStyle: "#ff0000"
     },
@@ -171,7 +171,7 @@ var program = Bodies.rectangle(canvasWidth/2, 50, 176, 40, {
     chamfer: {radius: 20},
     render: {
         sprite: {
-            texture: '../images/program.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/program.svg',
         }
         // fillStyle: "#ff0000"
     },
@@ -184,7 +184,7 @@ var instagram = Bodies.circle(canvasWidth/3, 50, 21, {
     restitution: RESTITUTION,
     render: {
         sprite: {
-            texture: '../images/inst.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/inst.svg',
         }
     },
     url: 'https://www.instagram.com/vizknowledge/'
@@ -195,7 +195,7 @@ var facebook = Bodies.circle(canvasWidth/4, 50, 21, {
     restitution: RESTITUTION,
     render: {
         sprite: {
-            texture: '../images/fcbk.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/fcbk.svg',
         }
     },
     url: 'https://www.facebook.com/vizknowledge/'
@@ -208,7 +208,7 @@ var twitter = Bodies.circle(canvasWidth/2, 50, 21, {
     
     render: {
         sprite: {
-            texture: '../images/twi.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/twi.svg',
         }
     },
     url: 'https://twitter.com/vizknowledge/'
@@ -221,7 +221,7 @@ var vimeo = Bodies.circle(canvasWidth/3, 50, 21, {
     
     render: {
         sprite: {
-            texture: '../images/vim.svg',
+            texture: 'https://vizknowledge.aalto.fi/images/shapes/vim.svg',
         }
     },
     url: 'https://vimeo.com/vizknowledge/'
