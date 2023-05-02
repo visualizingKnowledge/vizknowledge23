@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/matter-js@0.18.0/build/matter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pathseg@1.2.1/pathseg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/fav/site.webmanifest">
+
+    <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>VK23 | Visualizing Uncertainty</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ezd4tlg.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-mob.css">
+
+
+
+    <meta property="og:title" content="VK23 | Visualising Uncertainty">
+    <meta property="og:type" content="article" />
+    <meta property="og:description"
+        content="A conference, a showcase and workshops, invites you to discuss and explore uncertainty in a new light.">
+    <meta property="og:image" content="images/thumbnail.jpg">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+</head>
+
+<body>
+    <section>
+        <div class="header">
+        <nav>
+            <a href="../index.html" class="logo shuffle">VK23</a>
+            <input type="checkbox" id="nav" class="hidden" />
+            <label for="nav" class="nav-open">
+                <div class="menuWord">MENU</div>
+                <div class="icon"><i></i><i></i><i></i></div>
+            </label>
+            <div class="nav-container">
+                <ul>
+                    <li><a href="../#speakers">SPEAKERS</a></li>
+                    <li><a href="#">WORKSHOPS</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Q1pAYY0RwmO1M-t4t25mXDZN9vRIci3C/view?usp=share_link"
+                            target="_blank">SHOWCASE CALL</a></li>
+                    <li><a href="https://forms.gle/GjFoEn2985SrKK5j6" target="_blank">VOLUNTEER CALL</a></li>
+                    <li><a href="https://link.webropol.com/ep/vk23" target="_blank">TICKETS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </section>
+
+
+
+    
+    <section>
+        
+    </section>
+
+
+
+
+    <footer class="black">
+        <div class="footerTitle">
+            <h1 class="shuffle">Contact Us</h1>
+            <h1 class="shuffle">VIZKNOWLEDGE@AALTO.FI</h1>
+        </div>
+        <div class="footerInfo">
+            <div class="caption"><span class="shuffle">Visual Communication Design</span> <span
+                    class="shuffle">School of Arts, Design and Architecture</span></div>
+            <div class="caption" style="text-align: right;"><span class="shuffle">Department of Art and Media</span>
+                <span class="shuffle">Aalto University</span></div>
+        </div>
+        <div id="matterContainer"></div>
+    </footer>
+
+    <script>
+        //background animation on hover
+        $(document).ready(function () {
+            var movementStrength = 25;
+            var height = movementStrength / $(window).height();
+            var width = movementStrength / $(window).width();
+            $("#top-image").mousemove(function (e) {
+                var pageX = e.pageX - ($(window).width() / 2);
+                var pageY = e.pageY - ($(window).height() / 2);
+                var newvalueX = width * pageX * -1 - 25;
+                var newvalueY = height * pageY * -1 - 50;
+                $('#headerImage').css("background-position", newvalueX + "px     " + newvalueY + "px");
+            });
+        });
+
+
+        //menu
+
+        $(document).ready(function () {
+            // menu click event
+            $('.menuBtn').click(function () {
+                $(this).toggleClass('act');
+                if ($(this).hasClass('act')) {
+                    $('.mainMenu').addClass('act');
+                } else {
+                    $('.mainMenu').removeClass('act');
+                }
+            });
+        });
+
+
+        const menuItems = document.querySelectorAll('.contentbox');
+        const subtopicTextItems = document.querySelectorAll('.subtopicsText');
+        const subtopicBorderItems = document.querySelectorAll('.subtopicsBorder');
+let menuItemActive = document.querySelector('.active');
+
+// ---
+// App
+// ---
+
+for (var i = 0; i < menuItems.length; i++) {
+  menuItems[i].addEventListener('click', buttonClick);
+}
+
+// ---------
+// Functions
+// ---------
+
+function buttonClick() {
+  if (!this.classList.contains('active')) {
+    document.getElementById("subtopics").style.backgroundColor = `#${this.getAttribute('data-background')}`;
+    
+  
+
+    subtopicBorderItems.forEach(item => item.style.borderTop = `1px solid #${this.getAttribute('data-color2')}`);
+    subtopicTextItems.forEach(item => item.style.color = `#${this.getAttribute('data-color2')}`);
+   menuItems.forEach(item => item.style.borderBottom = `1px solid #${this.getAttribute('data-color2')}`);
+    
+    
+  
+
+    menuItemActive.classList.remove('active');
+    this.classList.toggle("active");
+   
+
+    
+
+    menuItemActive = this;
+  }
+  else{menuItemActive.classList.remove('active')}
+}
+    </script>
+
+    <script src="shuffle.js"></script>
+    <script src="work-in-progress.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -93,22 +93,22 @@ var radius = 20
 
 // create objects
 
-// art & design
-var about = Bodies.rectangle(canvasWidth*3/5, 50, 140, 40, {
-    friction: FRICTION,
-    frictionAir: FRICTION_AIR,
-    restitution: RESTITUTION,
-    chamfer: {radius: 20},
-    render: {
-        // fillStyle: "#ff0000"
-        sprite: {
-            texture: 'https://vizknowledge.aalto.fi/images/shapes/about.svg',
-        }
-    },
-    url: '../index.html'
-})
+// // art & design
+// var about = Bodies.rectangle(canvasWidth*3/5, 50, 140, 40, {
+//     friction: FRICTION,
+//     frictionAir: FRICTION_AIR,
+//     restitution: RESTITUTION,
+//     chamfer: {radius: 20},
+//     render: {
+//         // fillStyle: "#ff0000"
+//         sprite: {
+//             texture: 'https://vizknowledge.aalto.fi/images/shapes/about.svg',
+//         }
+//     },
+//     url: '../index.html'
+// })
 
-var tickets = Bodies.rectangle(canvasWidth/2, 50, 152, 40, {
+var tickets = Bodies.rectangle(canvasWidth*0.7, 50, 152, 40, {
     friction: FRICTION,
     frictionAir: FRICTION_AIR,
     restitution: RESTITUTION,
@@ -122,61 +122,61 @@ var tickets = Bodies.rectangle(canvasWidth/2, 50, 152, 40, {
     url: 'https://link.webropolsurveys.com/EventParticipation/EventPublic/400f27fb-eaaf-47ff-a09e-bdec3c8fec75?displayId=Fin2728547'
 })
 
-var showcase = Bodies.rectangle(canvasWidth/2, 50, 196, 40, {
-    friction: FRICTION,
-    frictionAir: FRICTION_AIR,
-    restitution: RESTITUTION,
-    chamfer: {radius: 20},
-    render: {
-        sprite: {
-            texture: 'https://vizknowledge.aalto.fi/images/shapes/showcase.svg',
-        }
-        // fillStyle: "#ff0000"
-    },
-    url: 'https://drive.google.com/file/d/1Q1pAYY0RwmO1M-t4t25mXDZN9vRIci3C/view'
-})
+// var showcase = Bodies.rectangle(canvasWidth/2, 50, 196, 40, {
+//     friction: FRICTION,
+//     frictionAir: FRICTION_AIR,
+//     restitution: RESTITUTION,
+//     chamfer: {radius: 20},
+//     render: {
+//         sprite: {
+//             texture: 'https://vizknowledge.aalto.fi/images/shapes/showcase.svg',
+//         }
+//         // fillStyle: "#ff0000"
+//     },
+//     url: 'https://drive.google.com/file/d/1Q1pAYY0RwmO1M-t4t25mXDZN9vRIci3C/view'
+// })
 
-var workshops = Bodies.rectangle(canvasWidth/3, 50, 216, 40, {
-    friction: FRICTION,
-    frictionAir: FRICTION_AIR,
-    restitution: RESTITUTION,
-    chamfer: {radius: 20},
-    render: {
-        sprite: {
-            texture: 'https://vizknowledge.aalto.fi/images/shapes/workshops.svg',
-        }
-        // fillStyle: "#ff0000"
-    },
-    url: '../index.html'
-})
+// var workshops = Bodies.rectangle(canvasWidth/3, 50, 216, 40, {
+//     friction: FRICTION,
+//     frictionAir: FRICTION_AIR,
+//     restitution: RESTITUTION,
+//     chamfer: {radius: 20},
+//     render: {
+//         sprite: {
+//             texture: 'https://vizknowledge.aalto.fi/images/shapes/workshops.svg',
+//         }
+//         // fillStyle: "#ff0000"
+//     },
+//     url: '../index.html'
+// })
 
-var speakers = Bodies.rectangle(canvasWidth/4, 50, 180, 40, {
-    friction: FRICTION,
-    frictionAir: FRICTION_AIR,
-    restitution: RESTITUTION,
-    chamfer: {radius: 20},
-    render: {
-        sprite: {
-            texture: 'https://vizknowledge.aalto.fi/images/shapes/speakers.svg',
-        }
-        // fillStyle: "#ff0000"
-    },
-    url: '../#speakers'
-})
+// var speakers = Bodies.rectangle(canvasWidth/4, 50, 180, 40, {
+//     friction: FRICTION,
+//     frictionAir: FRICTION_AIR,
+//     restitution: RESTITUTION,
+//     chamfer: {radius: 20},
+//     render: {
+//         sprite: {
+//             texture: 'https://vizknowledge.aalto.fi/images/shapes/speakers.svg',
+//         }
+//         // fillStyle: "#ff0000"
+//     },
+//     url: '../#speakers'
+// })
 
-var program = Bodies.rectangle(canvasWidth/2, 50, 176, 40, {
-    friction: FRICTION,
-    frictionAir: FRICTION_AIR,
-    restitution: RESTITUTION,
-    chamfer: {radius: 20},
-    render: {
-        sprite: {
-            texture: 'https://vizknowledge.aalto.fi/images/shapes/program.svg',
-        }
-        // fillStyle: "#ff0000"
-    },
-    url: '../index.html'
-})
+// var program = Bodies.rectangle(canvasWidth/2, 50, 176, 40, {
+//     friction: FRICTION,
+//     frictionAir: FRICTION_AIR,
+//     restitution: RESTITUTION,
+//     chamfer: {radius: 20},
+//     render: {
+//         sprite: {
+//             texture: 'https://vizknowledge.aalto.fi/images/shapes/program.svg',
+//         }
+//         // fillStyle: "#ff0000"
+//     },
+//     url: '../index.html'
+// })
 
 var instagram = Bodies.circle(canvasWidth/3, 50, 21, {
     friction: FRICTION,
@@ -229,8 +229,8 @@ var vimeo = Bodies.circle(canvasWidth/3, 50, 21, {
 
 
 // add all of the bodies to the world
-Composite.add(engine.world, [ground, leftWall, rightWall, about, tickets, program, speakers, workshops, showcase, instagram, facebook, twitter, vimeo]);
-
+Composite.add(engine.world, [ground, leftWall, rightWall,  tickets, instagram, facebook, twitter, vimeo]);
+//about,
 // add mouse control
 var mouse = Mouse.create(render.canvas),
     mouseConstraint = MouseConstraint.create(engine, {
