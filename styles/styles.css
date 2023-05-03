@@ -544,6 +544,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+
 }
 
 nav ul li:not(:first-child) {
@@ -552,6 +553,7 @@ nav ul li:not(:first-child) {
 
 
 nav ul li a {
+
   display: inline-block;
   color: var(--black);
   font-size: 1rem;
@@ -657,7 +659,7 @@ nav ul li a:hover {
     padding: 1rem 2rem;
     opacity: 0;
     color: var(--white);
-    font-size: 5.8rem;
+    font-size: 4rem;
     transform: translateY(-20px);
     transition: all 0.2s ease;
   }
