@@ -88,7 +88,7 @@
         <div class="aboutContent" id="general">
             <div class="lead">
                 Visualizing Knowledge,  a conference, a showcase and workshops, invites you to discuss and explore uncertainty in a new light. Let’s find prevalent questions and explanations through information design and Data visualization to unravel the complexity.</div>
-            <div class="aboutImg"><img src="../images/vk18.jpg" width="100%"/></div>
+            <div class="aboutImg"><img src="./images/vk18.jpg" width="100%"/></div>
             <div class="imageCaption">Visualizing Knowledge 2018, Aalto University</div>
             <div class="aboutSection" id="background">
                 <div class="aboutTitle">
@@ -116,7 +116,7 @@
                 Visualizing Knowledge 2023 will take place on Aalto University’s main campus Otaniemi which is situated in the area of Espoo, 15 minutes by metro from Helsinki City Center. Originally designed by Alvar Aalto, the campus offers a unique combination of education, study and business packed into this small area.</p>
                 <p>The conference itself will take place in Alvar Aalto Hall, Otakaari 1 (Kandidaattikeskus) – Aalto University’s main building. The showcase will also be located in the Väre building, close to the conference hall.
                </p>
-               <div class="aboutImg"><img src="../images/venue.webp" width="100%"/></div>
+               <div class="aboutImg"><img src="./images/venue.webp" width="100%"/></div>
                <div class="imageCaption">Alvar Aalto Hall, Otakaari 1 (Kandidaattikeskus)</div>
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.6827155517185!2d24.8271078!3d60.185983799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df5ece6fdc397%3A0xdcfb11b85a06e1d!2sAalto-yliopisto%20Kandidaattikeskus!5e0!3m2!1sen!2sfi!4v1683128746616!5m2!1sen!2sfi" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -144,21 +144,7 @@
     </footer>
 
     <script>
-        //background animation on hover
-        $(document).ready(function () {
-            var movementStrength = 25;
-            var height = movementStrength / $(window).height();
-            var width = movementStrength / $(window).width();
-            $("#top-image").mousemove(function (e) {
-                var pageX = e.pageX - ($(window).width() / 2);
-                var pageY = e.pageY - ($(window).height() / 2);
-                var newvalueX = width * pageX * -1 - 25;
-                var newvalueY = height * pageY * -1 - 50;
-                $('#headerImage').css("background-position", newvalueX + "px     " + newvalueY + "px");
-            });
-        });
-
-
+       
         //menu
 
         $(document).ready(function () {
