@@ -121,7 +121,6 @@ a:hover{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
     min-height: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
