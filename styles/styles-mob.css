@@ -1,32 +1,187 @@
-@media (max-width: 700px) {
+/* TABLE OF CONTENT */
+/* 01 GENERAL */
+/* 02 TYPOGRAPHY */
+/* 03 NAVIGATION */
+/* 04 HERO BLOCK */
+/* 05 SPEAKER SECTION */
+/* 05 SUBTOPICS SECTION */
+/* 06 PRICES SECTION */
+/* 07 SPONSORS SECTION */
+/* 08 FOOTER */
+/* 09 ABOUT PAGE */
+/* 10 SPEAKERS' PAGES */
+
+@media (max-width: 1024px) {
+
+  /* GENERAL */
 
   html {
     font-size: 8px;
   }
 
-  /* SECTIONS */
 
+  /* TYPOGRAPHY */
 
-h1{
-  font-size: 4.8rem;
-}
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
   p {
     font-size: 2.2rem;
     width: 100%;
     line-height: 140%;
   }
 
-  .logo{
+  .caption {
+    font-size: 1.4rem;
+  }
+
+
+  /* NAVIGATION */
+
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--black);
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  .nav-container ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  .nav-container ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-family: "acumin-pro-condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--white);
+  }
+
+  .nav-container ul li:nth-child(1) a {
+    transition-delay: 0.2s;
+  }
+
+  .nav-container ul li:nth-child(2) a {
+    transition-delay: 0.3s;
+  }
+
+  .nav-container ul li:nth-child(3) a {
+    transition-delay: 0.4s;
+  }
+
+  .nav-container ul li:nth-child(4) a {
+    transition-delay: 0.5s;
+  }
+
+  .nav-container ul li:not(:first-child) {
+    margin-left: 0;
+  }
+
+
+  .nav-container ul li a {
+    padding: 1rem 2rem;
+    opacity: 0;
+    color: var(--white);
+    font-size: 4rem;
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+  }
+
+  #nav:checked+.nav-open .icon {
+    display: block;
+  }
+
+
+
+  #nav:checked+.nav-open .menuWord {
+    display: none;
+  }
+
+  .nav-open .icon {
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: 20px;
+  }
+
+
+
+  .nav-open i {
+    display: block;
+    width: 32px;
+    height: 2px;
+    background: var(--black);
+    border-radius: 2px;
+    margin-left: 14px;
+  }
+
+  .nav-open i:nth-child(1) {
+    margin-top: 16px;
+  }
+
+  .nav-open i:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+
+  .nav-open i:nth-child(3) {
+    margin-top: 4px;
+  }
+
+
+  .nav-open {
+    position: fixed;
+    display: block;
+    border: 1px solid var(--black);
+    top: 2rem;
+    height: fit-content;
+    z-index: 9999;
+    cursor: pointer;
+    right: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 8px !important;
+    padding-bottom: 10px !important;
+    font-family: 'acumin-pro';
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    line-height: 50%;
+  }
+
+  /* HERO BLOCK */
+
+  .logo {
     font-size: 10rem;
   }
 
-  .headerInfo{
+  .headerInfo {
     margin-top: 3rem;
   }
 
-  h3{
-    font-size:3.4rem;
-  }
   .header {
     height: fit-content;
     background-color: var(--white);
@@ -44,57 +199,24 @@ h1{
     margin: 0;
   }
 
-
-
-  .nav-open {
-    border: 1px solid var(--black);
-    top: 2rem;
-    height: fit-content;
-    right: 1rem;
-    font-size: 2rem;
-    text-decoration: none;
-    border: 1px solid var(--black);
-    border-radius: 20px;
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-    padding-top: 8px !important;
-    padding-bottom: 10px!important;
-    font-family: 'acumin-pro';
-    font-style: normal;
-    font-weight: 400;
-  }
-
-  .topicWord {
-    font-size: 1.3rem;
-    z-index: 20;
-    padding: 0;
-  }
-
   #headerImage {
-    /* background-size: 250%; */
     height: 70vh;
     background-position: center;
   }
 
-  .about {
-    flex-direction: column;
-    padding-top: 3rem;
-    min-height: fit-content;
-  }
+
+  /* SPEAKER SECTION */
 
   .sectionName .caption {
     font-size: 1.4rem;
     padding-top: 0.7rem;
   }
 
-  .caption {
-    font-size: 1.4rem;
-  }
 
-
-  .speakers{
+  .speakers {
     padding-bottom: 0rem;
   }
+
   .speakersGallery {
     margin-top: 2rem;
     display: flex;
@@ -120,48 +242,41 @@ h1{
     margin-bottom: 0.5rem;
   }
 
-  .noname{
+  .noname {
     height: 70rem;
   }
 
-  .speakersName{
+  .speakersName {
     border-top: 1px solid var(--black);
   }
 
-  .speakersName h3 {
-        font-size: 4rem !important;
-    line-height: 100%;
-  }
 
-  .speakersTopic .caption {
-    font-size: 4rem !important;
-  }
+
+  /* SUBTOPICS SECTION */
 
   .subtopics {
     padding-bottom: 6rem;
     padding-top: 3rem;
   }
 
-  .accorditionAreaName{
+  .accorditionAreaName {
     display: none;
   }
 
-  .accor{
+  .accor {
     width: 100%;
     padding-top: 4rem;
   }
 
-  .accor .contentbox .label h3{
+  .accor .contentbox .label h3 {
     font-size: 2.8rem;
   }
 
-  
+
   .accor .contentbox .label {
-    padding:2rem;
+    padding: 2rem;
     padding-left: 0;
   }
-
-
 
   .accor .contentbox .label:before {
     font-size: 3rem;
@@ -169,29 +284,35 @@ h1{
   }
 
 
-
-  .subtopicsTitle {
-    width: 100%;
-}
+  .subtopicsTitle,
   .subtopicsItem {
     width: 100%;
   }
 
+  /* PRICES */
 
-  .background {
-    flex-direction: column;
-    padding-top: 3rem;
+  .prices {
+    height: 50vh;
   }
 
-  .backgroundText {
-    width: 100%;
-    border: 0;
+  .prices h3 {
+    font-size: 3rem;
   }
 
-  .background h2 {
-    width: 100%;
-    border: 0;
+  .prices .ticketsType {
+    width: 70%;
   }
+
+  .priceItem {
+    align-items: flex-end;
+  }
+
+  .sponsorItem img {
+    height: 25px !important;
+  }
+
+
+  /* SPONSORS SECTION */
 
   .sponsors {
     flex-direction: column;
@@ -201,6 +322,7 @@ h1{
     height: 10vw;
   }
 
+  /* FOOTER */
 
   footer {
     margin-top: -3px;
@@ -215,6 +337,39 @@ h1{
     flex-direction: column;
   }
 
+
+  /* ABOUT PAGE */
+
+  .aboutPageContent {
+    flex-direction: column;
+  }
+
+  .aboutNav,
+  .aboutContent {
+    width: 100%;
+  }
+
+  .aboutNav {
+    margin-bottom: 10rem;
+  }
+
+  .lead {
+    font-size: 3rem;
+  }
+
+  .imageCaption {
+    font-size: 2rem;
+  }
+
+  .aboutTitle {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .aboutSection {
+    margin-bottom: 6rem;
+    padding-top: 1rem;
+  }
 
 
   /* SPEAKERS' PAGES */
@@ -275,73 +430,10 @@ h1{
     margin-bottom: 4rem;
   }
 
-
-
-.speakersTopic .caption {
+  .speakersTopic .caption {
     padding-top: 0.3rem;
     font-size: 2rem !important;
   }
-
-
-
-.prices {
-  height: 50vh;
-}
-
-.prices h3{ 
-  font-size: 3rem;
-}
-
-.prices .ticketsType{
-  width: 70%;
-}
-
-.priceItem{
-  align-items: flex-end
-}
-
-.sponsorItem img {
-  height: 25px!important;
-}
-
-.sponsorsGrid .caption{
-  font-size: 1.4rem;
-  width: fit-content;
-}
-
-
-/* ABOUT PAGE */
-
-.aboutPageContent{
-  flex-direction: column;
-}
-
-.aboutNav, .aboutContent{
-  width: 100%;
-}
-
-.aboutNav {
-  margin-bottom: 10rem;
-}
-
-.lead{
-  font-size: 3rem;
-}
-
-.imageCaption{
-  font-size: 2rem;
-}
-
-.aboutTitle{
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.aboutSection{
-  margin-bottom: 6rem;
-  padding-top: 1rem;
-}
-
 
 
 
