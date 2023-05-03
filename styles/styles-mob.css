@@ -70,6 +70,7 @@ h1{
   #headerImage {
     /* background-size: 250%; */
     height: 70vh;
+    background-position: center;
   }
 
   .about {
