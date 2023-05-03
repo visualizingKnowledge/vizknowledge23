@@ -169,8 +169,8 @@ a:hover{
 
 #headerImage {
   background-color: var(--red);
-  height: 60%;
-  background-image: url("images/Website Video_White.gif");
+  min-height: 62vh;
+  background-image: url("../images/Website Video_White.gif");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
