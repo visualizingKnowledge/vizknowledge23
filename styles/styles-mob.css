@@ -24,6 +24,9 @@ h1{
     margin-top: 3rem;
   }
 
+  h3{
+    font-size:3.4rem;
+  }
   .header {
     height: fit-content;
     background-color: var(--white);
@@ -305,5 +308,41 @@ h1{
   font-size: 1.4rem;
   width: fit-content;
 }
+
+
+/* ABOUT PAGE */
+
+.aboutPageContent{
+  flex-direction: column;
+}
+
+.aboutNav, .aboutContent{
+  width: 100%;
+}
+
+.aboutNav {
+  margin-bottom: 10rem;
+}
+
+.lead{
+  font-size: 3rem;
+}
+
+.imageCaption{
+  font-size: 2rem;
+}
+
+.aboutTitle{
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.aboutSection{
+  margin-bottom: 6rem;
+  padding-top: 1rem;
+}
+
+
+
 
 }

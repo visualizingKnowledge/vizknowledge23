@@ -50,7 +50,15 @@ section {
   background-color: var(--orange);
 }
 
-
+.lead{
+  font-size: 1.8rem;
+  font-family: 'acumin-pro';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  padding-bottom: 12px;
+  margin: 0;
+}
 
 h2 {
   text-transform: uppercase;
@@ -70,7 +78,6 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  width: 90%;
   padding-bottom: 12px;
   margin: 0;
 }
@@ -80,7 +87,7 @@ h3 {
   text-transform: uppercase;
   text-align: justify;
   font-family: "acumin-pro-condensed", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 2rem;
   text-transform: uppercase;
@@ -896,4 +903,62 @@ margin-top: 4rem;
 
 .accorditionAreaName {
   width: calc(25% + 1rem)!important; 
+}
+
+
+/* ABOUT PAGE */
+
+.aboutPageContent{
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.aboutNav{
+  width: 33.34%;
+}
+
+.aboutContent{
+  width: 66.67%;
+}
+
+.list-group{
+  padding: 0;
+  margin: 0;
+}
+
+.list-group a{
+ border: none;
+}
+
+
+
+.aboutTitle{
+  border-top: 1px solid var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.aboutSection{
+  margin-bottom: 3rem;
+  padding-top: 0.6rem;
+}
+
+.imageCaption{
+  font-size: 0.9rem;
+  color: var(--black);
+  opacity: 0.4;
+  margin-bottom: 3rem;
+}
+
+.aboutImg img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: 1rem 0 0 0;
 }
