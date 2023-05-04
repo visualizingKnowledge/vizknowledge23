@@ -587,6 +587,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
+  position: relative;
 }
 
 .footerTitle {
@@ -625,6 +626,13 @@ footer {
   left: 0;
 }
 
+.aaltoLogo{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  width: 86px;
+}
 
 /* ABOUT PAGE */
 
